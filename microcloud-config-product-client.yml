@@ -28,13 +28,13 @@ eureka:
     service-url:
       defaultZone: http://admin:enjoy@localhost:7001/eureka
   instance:
-    instance-id: microcloud-config-product-client
+    instance-id: config-article
     prefer-ip-address: true
     lease-renewal-interval-in-seconds: 2 # 设置心跳的时间间隔（默认是30秒）
     lease-expiration-duration-in-seconds: 5  # 如果现在超过了5秒的间隔（默认是90秒）
 
 info:
-  app.name: microcloud-provider-product
+  app.name: config-article
   company.name: enjoy
   build.artifactId: $project.artifactId$
   build.modelVersion: $project.modelVersion$
@@ -72,13 +72,13 @@ eureka:
     service-url:
       defaultZone: http://admin:enjoy@localhost:7002/eureka
   instance:
-    instance-id: microcloud-config-product-client
+    instance-id: config-article
     prefer-ip-address: true
     lease-renewal-interval-in-seconds: 2 # 设置心跳的时间间隔（默认是30秒）
     lease-expiration-duration-in-seconds: 5  # 如果现在超过了5秒的间隔（默认是90秒）
 
 info:
-  app.name: microcloud-config-product-client
+  app.name: config-article
   company.name: enjoy
   build.artifactId: $project.artifactId$
   build.modelVersion: $project.modelVersion$
