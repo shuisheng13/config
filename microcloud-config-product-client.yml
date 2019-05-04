@@ -16,7 +16,7 @@ spring:
    username: root # 数据库用户名
    password: root # 数据库连接密码
  application:
-   name: microcloud-config-product-client
+   name: config-article
  profiles: dev
 
 logging:
@@ -60,7 +60,7 @@ spring:
    username: root # 数据库用户名
    password: root # 数据库连接密码
  application:
-   name: microcloud-config-product-client
+   name: config-article
  profiles: beta
 
 logging:
@@ -70,7 +70,7 @@ logging:
 eureka:
   client: # 客户端进行Eureka注册的配置
     service-url:
-      defaultZone: http://admin:enjoy@localhost:7002/eureka
+      defaultZone: http://admin:enjoy@localhost:7001/eureka
   instance:
     instance-id: config-article
     prefer-ip-address: true
